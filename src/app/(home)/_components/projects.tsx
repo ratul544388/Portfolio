@@ -1,12 +1,11 @@
 import { projects } from "@/constants";
+import { cn } from "@/lib/utils";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import { ArrowButton } from "../../../components/arrow-button";
-import { WhileInView } from "../../../components/while-in-view";
-import { AnimatePresence, motion } from "framer-motion";
 import { Button } from "../../../components/ui/button";
-import { cn } from "@/lib/utils";
-import { ViewAllProjectsButton } from "./view-all-projects-button";
+import { WhileInView } from "../../../components/while-in-view";
 
 export const Projects = () => {
   const [activeIndex, setActiveIndex] = useState(0);

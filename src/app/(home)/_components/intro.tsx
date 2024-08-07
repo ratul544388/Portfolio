@@ -49,7 +49,7 @@ export const Intro = () => {
         </Link>
         <HorizontalInfinityScroll
           className="order-2 h-fit max-w-screen-xl lg:order-1 lg:w-[50vw]"
-          speed={20}
+          speed={35}
         >
           {techImages.map((image, index) => (
             <Image
